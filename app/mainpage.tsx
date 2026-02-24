@@ -25,7 +25,7 @@ export default function MainPage() {
         <main className="flex w-auto max-w-3xl flex-col items-center justify-between px-16 sm:items-start mt-auto mb-auto">
           <div className="w-auto rounded-full border border-gray-500/50 p-2 flex self-center hover:cursor-default bg-gray-500/20 fade-up opacity-0">
             <span className="flex w-2 h-2 bg-green-500 rounded-full mt-auto mb-auto ml-2" />
-            <span className="ml-2 mr-3">Verfügbar für neue Projekte</span>
+            <span className="ml-2 mr-3 text-white">Verfügbar für neue Projekte</span>
           </div>
 
           <h1 className="w-full mx-auto p-4 text-center text-7xl font-bold tracking-wide mt-6 fade-up opacity-0 text-white" style={{ animationDelay: "0.2s" }}>
