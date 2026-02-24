@@ -2,24 +2,21 @@ import { FaCode, FaPalette, FaRocket, FaStar } from "react-icons/fa"
 import Card from "./components/Card"
 import TechStack from "./components/TechStack"
 import AnimateOnScroll from "./components/ScrollAnimation"
+import Tag from "./components/Tag"
 
 export default function About() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white text-black tracking-wide">
-      <div className="w-4/5 min-h-screen flex flex-col justify-center items-center]:">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white text-slate-900 tracking-wide" id="about">
+      <div className="w-4/5 min-h-screen flex flex-col justify-center items-center gap-10">
 
         { /* About Embed */}
         <AnimateOnScroll className="self-center" type="fade">
-          <div className="w-26 h-10 rounded-full bg-gray-500/10 text-blue-950 flex self-center mt-10">
-            <span className="h-5.5 m-auto font-semibold" id="about">
-              Über mich
-            </span>
-          </div>
+          <Tag text="Über mich" />
         </AnimateOnScroll>
 
         { /* Title */}
         <AnimateOnScroll type="fade">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-center font-bold mt-8 leading-snug">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-center font-bold leading-snug">
             Leidenschaft für{' '}
             <span className="text-blue-400">
               exzellente{' '}
@@ -29,14 +26,14 @@ export default function About() {
         </AnimateOnScroll>
 
         { /* About Description */}
-        <AnimateOnScroll className="text-center w-auto md:w-2xl self-center mt-6 text-gray-700" type="fade">
+        <AnimateOnScroll className="text-center w-auto md:w-2xl self-center text-gray-700" type="fade">
           <span className="w-auto md:w-2xl text-center self-center text-gray-700">
             Mit mehreren Jahren Erfahrung entwickle ich Webanwendungen, die nicht nur gut aussehen, sondern auch technisch auf höchstem Niveau sind.
           </span>
         </AnimateOnScroll>
 
         { /* Card Informations */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 mt-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 w-full">
 
           { /* Code Card */}
           <AnimateOnScroll delay={0} type="fade">
@@ -48,7 +45,7 @@ export default function About() {
           </AnimateOnScroll>
 
           { /* Design Card */}
-          <AnimateOnScroll delay={200} type="fade">
+          <AnimateOnScroll delay={100} type="fade">
             <Card
               title="Modern Design"
               description="Zeitgemäße UI/UX mit Fokus auf Benutzerfreundlichkeit."
@@ -57,7 +54,7 @@ export default function About() {
           </AnimateOnScroll>
 
           { /* Performance Card */}
-          <AnimateOnScroll delay={400} type="fade">
+          <AnimateOnScroll delay={200} type="fade">
             <Card
               title="Performance"
               description="Schnelle Ladezeiten und Optimierte Anwendungen."
@@ -66,7 +63,7 @@ export default function About() {
           </AnimateOnScroll>
 
           { /* Innovation Card */}
-          <AnimateOnScroll delay={600} type="fade">
+          <AnimateOnScroll delay={300} type="fade">
             <Card
               title="Innovation"
               description="Einsatz neuster Technologien und Frameworks."
@@ -76,7 +73,7 @@ export default function About() {
         </div>
 
         { /* Tech Stack */}
-        <AnimateOnScroll type="fade">
+        <AnimateOnScroll type="fade" className="w-full">
           <TechStack />
         </AnimateOnScroll>
       </div>

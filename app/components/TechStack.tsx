@@ -19,7 +19,7 @@ export default function TechStack() {
   ];
 
   return (
-    <section className="bg-slate-950 p-12 text-white rounded-2xl mt-16 mb-10">
+    <section className="bg-slate-900 p-12 text-white rounded-2xl mb-10 w-full">
       <h2 className="text-2xl font-bold mb-8">Tech Stack</h2>
 
       <div className="grid md:grid-cols-2 gap-10">
