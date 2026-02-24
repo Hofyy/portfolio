@@ -28,11 +28,11 @@ export default function MainPage() {
             <span className="ml-2 mr-3">Verfügbar für neue Projekte</span>
           </div>
 
-          <h1 className="w-full mx-auto p-4 text-center text-7xl font-bold tracking-wide mt-6 fade-up opacity-0" style={{ animationDelay: "0.2s" }}>
+          <h1 className="w-full mx-auto p-4 text-center text-7xl font-bold tracking-wide mt-6 fade-up opacity-0 text-white" style={{ animationDelay: "0.2s" }}>
             Web Developer
           </h1>
 
-          <p className="pl-16 pr-16 pt-1.5 text-center tracking-wide fade-up opacity-0" style={{ animationDelay: "0.4s" }}>
+          <p className="pl-16 pr-16 pt-1.5 text-center tracking-wide fade-up opacity-0 text-white" style={{ animationDelay: "0.4s" }}>
             Ich kreiere moderne, performanter Webanwendungen mit Fokus auf&nbsp;
             <a className="text-purple-500 tracking-wide">
               ausergewöhnliche User Experience&nbsp;
