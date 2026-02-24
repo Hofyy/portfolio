@@ -1,10 +1,8 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
-
-const nextConfig: NextConfig = {
-  basePath: isProd ? "/repo-name" : "",
-  assetPrefix: isProd ? "/repo-name/" : ""
+const nextConfig = {
+  output: 'export',        // <- wichtig für statische Export
+  trailingSlash: true,
 };
 
 export default nextConfig;
