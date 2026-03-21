@@ -26,22 +26,22 @@ export default function Projects() {
           </p>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6 w-auuto">
-          <AnimateOnScroll type="fade" className="w-124" delay={0}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl">
+          <AnimateOnScroll type="fade" className="w-full" delay={0}>
             <ProjectCard
               tags={["React", "Node.js", "TypeScript", "Tailwind CSS"]}
               title="FluxCMS"
               description="Ein modulares Content-Management-System mit Fokus auf Performance, Entwicklerfreundlichkeit und flexibler API-Struktur"
             />
           </AnimateOnScroll>
-          <AnimateOnScroll type="fade" className="w-124" delay={100}>
+          <AnimateOnScroll type="fade" className="w-full" delay={100}>
             <ProjectCard
               tags={["React", "Node.js", "TypeScript", "Tailwind CSS"]}
               title="FluxCMS"
               description="Ein modulares Content-Management-System mit Fokus auf Performance, Entwicklerfreundlichkeit und flexibler API-Struktur"
             />
           </AnimateOnScroll>
-          <AnimateOnScroll type="fade" className="w-124" delay={0}>
+          <AnimateOnScroll type="fade" className="w-full" delay={0}>
             <ProjectCard
               tags={["React", "Node.js", "TypeScript", "Tailwind CSS"]}
               title="FluxCMS"
