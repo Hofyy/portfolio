@@ -60,7 +60,7 @@ export default function MainPage() {
               <button
                 className="border border-gray-500/50 w-5/14 pt-3 pb-3 rounded-lg text-white font-bold tracking-wide hover:bg-gray-700/20 hover:cursor-pointer transition-all duration-300 mt-8"
               >
-                <a>Kontakt aufnehmen</a>
+                <a href='#contact'>Kontakt aufnehmen</a>
               </button>
             </div>
           </main>
