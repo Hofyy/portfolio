@@ -78,9 +78,9 @@ export default function Lebenslauf() {
           </div>
 
           {timelineData.map((item, index) => (
-            <div key={index} className="relative mb-16 flex flex-col md:flex-row items-center w-full">
+            <div key={index} className="relative mb-6 flex flex-col md:flex-row items-center w-full">
               {item.year && (
-                <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 -top-10 z-30">
+                <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 -top-6 z-30">
                   <span className="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-full">{item.year}</span>
                 </div>
               )}
