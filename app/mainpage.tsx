@@ -55,7 +55,7 @@ export default function MainPage() {
               <button
                 className="bg-white w-5/14 pt-3 pb-3 rounded-lg text-slate-900 font-bold tracking-wide hover:cursor-pointer hover:scale-105 transition-all duration-300 mt-8"
               >
-                <a>Meine Projekte Ansehen</a>
+                <a href='#projects'>Meine Projekte Ansehen</a>
               </button>
               <button
                 className="border border-gray-500/50 w-5/14 pt-3 pb-3 rounded-lg text-white font-bold tracking-wide hover:bg-gray-700/20 hover:cursor-pointer transition-all duration-300 mt-8"

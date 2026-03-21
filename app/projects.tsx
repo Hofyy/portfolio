@@ -5,7 +5,7 @@ import Tag from "./components/Tag";
 export default function Projects() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gray-50 text-slate-900 tracking-wide pb-10" id="about">
-      <div className="w-4/5 min-h-screen flex flex-col justify-center items-center gap-10">
+      <div className="w-4/5 min-h-screen flex flex-col justify-center items-center gap-10" id="projects">
         <AnimateOnScroll type="fade" className="mt-10">
           <Tag text="Meine Projekte" />
         </AnimateOnScroll>
