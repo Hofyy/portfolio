@@ -1,11 +1,12 @@
+import ProjectCard from "./components/ProjectCard";
 import AnimateOnScroll from "./components/ScrollAnimation";
 import Tag from "./components/Tag";
 
 export default function Projects() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white text-slate-900 tracking-wide" id="about">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gray-50 text-slate-900 tracking-wide" id="about">
       <div className="w-4/5 min-h-screen flex flex-col justify-center items-center gap-10">
-        <AnimateOnScroll type="fade">
+        <AnimateOnScroll type="fade" className="mt-10">
           <Tag text="Meine Projekte" />
         </AnimateOnScroll>
 
@@ -24,6 +25,30 @@ export default function Projects() {
             Eine Auswahl meiner bisherigen Arbeiten und Projekte, die meine Fähigkeiten und meinen Stil widerspiegeln.
           </p>
         </AnimateOnScroll>
+
+        <div className="grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-6 w-auuto">
+          <AnimateOnScroll type="fade" className="w-124" delay={0}>
+            <ProjectCard
+              tags={["React", "Node.js", "TypeScript", "Tailwind CSS"]}
+              title="FluxCMS"
+              description="Ein modulares Content-Management-System mit Fokus auf Performance, Entwicklerfreundlichkeit und flexibler API-Struktur"
+            />
+          </AnimateOnScroll>
+          <AnimateOnScroll type="fade" className="w-124" delay={100}>
+            <ProjectCard
+              tags={["React", "Node.js", "TypeScript", "Tailwind CSS"]}
+              title="FluxCMS"
+              description="Ein modulares Content-Management-System mit Fokus auf Performance, Entwicklerfreundlichkeit und flexibler API-Struktur"
+            />
+          </AnimateOnScroll>
+          <AnimateOnScroll type="fade" className="w-124" delay={0}>
+            <ProjectCard
+              tags={["React", "Node.js", "TypeScript", "Tailwind CSS"]}
+              title="FluxCMS"
+              description="Ein modulares Content-Management-System mit Fokus auf Performance, Entwicklerfreundlichkeit und flexibler API-Struktur"
+            />
+          </AnimateOnScroll>
+        </div>
       </div>
     </section>
   );

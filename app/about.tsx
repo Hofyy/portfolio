@@ -73,7 +73,7 @@ export default function About() {
         </div>
 
         { /* Tech Stack */}
-        <AnimateOnScroll type="fade" className="w-full">
+        <AnimateOnScroll type="fade" className="w-full mb-10">
           <TechStack />
         </AnimateOnScroll>
       </div>
