@@ -38,11 +38,31 @@ const utils = {
 // Extra Features
 document.addEventListener("click", e => { if (e.target.matches("li")) app.remove(Number(e.target.dataset.id)); });
 
+// More Logic to fill space
+const theme = {
+  dark: { bg: "#020617", text: "#f8fafc" },
+  light: { bg: "#ffffff", text: "#0f172a" }
+};
+
+function useWindowSize() {
+  const [size, setSize] = React.useState({ width: 0, height: 0 });
+  React.useEffect(() => {
+    const handle = () => setSize({ width: window.innerWidth, height: window.innerHeight });
+    window.addEventListener("resize", handle);
+    handle();
+    return () => window.removeEventListener("resize", handle);
+  }, []);
+  return size;
+}
+
 // Init
 document.addEventListener("DOMContentLoaded", () => app.init());
 
 // I hope you like my Program
 // And also my Portfolio Site :)
+
+const finalCheck = () => console.log("System check: OK");
+finalCheck();
 
 console.log("byee");`;
 
@@ -58,8 +78,19 @@ console.log("byee");`;
   const [terminalLines, setTerminalLines] = useState<string[]>([]);
   useEffect(() => {
     const logs = ["", "$ npm i", "up to date, audited 510 packages in 12s", "191 packages are looking for funding", "      run `npm fund` for details", "3 vulnerabilities (1 moderate, 2 high)", "To address issues, run:", "      npm audit fix", "To address all issues, run:", "      npm audit fix --force", "Run `npm audit` for details.", "", "$ npm run dev", "", "> portfolio@0.1.0 dev", "> next dev", "", "", "▲ Next.js 16.1.6 (Turbopack)", "- Local:         http://localhost:3000", "- Network:       http://26.117.50.64:3000", "- Environments: .env.local", "", "✓ Starting...", "✓ Ready in 14.2s", "", "○ Compiling / ...", "GET / 200 in 4.1s (compile: 3.6s, render: 476ms)"];
-    let currentLine = 0; const interval = setInterval(() => { if (currentLine < logs.length) { setTerminalLines(prev => [...prev, logs[currentLine]]); currentLine++; } else { clearInterval(interval); } }, 150);
-    return () => clearInterval(interval);
+    let index = 0;
+    let timeoutId: NodeJS.Timeout;
+
+    const addLine = () => {
+      setTerminalLines(prev => [...prev, logs[index % logs.length]].slice(-36));
+      index++;
+      const randomDelay = Math.floor(Math.random() * 200) + 20;
+      timeoutId = setTimeout(addLine, randomDelay);
+    };
+
+    timeoutId = setTimeout(addLine, 50);
+
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (
