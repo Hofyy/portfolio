@@ -84,7 +84,7 @@ console.log("byee");`;
     const addLine = () => {
       setTerminalLines(prev => [...prev, logs[index % logs.length]].slice(-36));
       index++;
-      const randomDelay = Math.floor(Math.random() * 200) + 20;
+      const randomDelay = Math.floor(Math.random() * 600) + 20;
       timeoutId = setTimeout(addLine, randomDelay);
     };
 
@@ -107,4 +107,5 @@ console.log("byee");`;
     </div>
   );
 };
+
 export default CodeBackground;
