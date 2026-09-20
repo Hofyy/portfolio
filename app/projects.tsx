@@ -29,23 +29,9 @@ export default function Projects() {
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 px-0 sm:px-4 scale-100">
           <AnimateOnScroll type="fade" className="w-full flex justify-center" delay={0}>
             <ProjectCard
-              tags={["React", "Node.js", "TypeScript", "Tailwind CSS"]}
-              title="FluxCMS"
-              description="Ein modulares Content-Management-System mit Fokus auf Performance, Entwicklerfreundlichkeit und flexibler API-Struktur"
-            />
-          </AnimateOnScroll>
-          <AnimateOnScroll type="fade" className="w-full flex justify-center" delay={100}>
-            <ProjectCard
-              tags={["React", "Node.js", "TypeScript", "Tailwind CSS"]}
-              title="FluxCMS"
-              description="Ein modulares Content-Management-System mit Fokus auf Performance, Entwicklerfreundlichkeit und flexibler API-Struktur"
-            />
-          </AnimateOnScroll>
-          <AnimateOnScroll type="fade" className="w-full flex justify-center" delay={200}>
-            <ProjectCard
-              tags={["React", "Node.js", "TypeScript", "Tailwind CSS"]}
-              title="FluxCMS"
-              description="Ein modulares Content-Management-System mit Fokus auf Performance, Entwicklerfreundlichkeit und flexibler API-Struktur"
+              tags={["API's", "3D Visualisierungen"]}
+              title="Wetter App"
+              description="Eine einfache kleine Wetter-App mit Color-Themes, und schönen Animationen."
             />
           </AnimateOnScroll>
         </div>
