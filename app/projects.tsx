@@ -32,7 +32,7 @@ export default function Projects() {
               tags={["API's", "3D Visualisierungen"]}
               title="Wetter App"
               description="Eine einfache kleine Wetter-App mit Color-Themes, und schönen Animationen."
-              imagesrc="/public/weatherapp"
+              imagesrc="/public/weatherapp.png"
               githublink="https://github.com/Hofyy/weatherapp/"
               projectlink="https://justaweatherapp.vercel.app/"
             />
