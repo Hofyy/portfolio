@@ -22,8 +22,8 @@ export default function ProjectCard({ title, description, tags, imagesrc, projec
         />
         <div className="absolute w-full h-full bg-gray-600/80 opacity-0 group-hover:opacity-100 transition-all duration-300 flex gap-3">
           <div className="w-full flex self-center justify-center gap-6">
-            <FaExternalLinkAlt className="text-black w-14 h-14 bg-white p-3.5 rounded-xl font-light hover:cursor-pointer scale-90 hover:scale-100 duration-300 transition-all" href={projectlink} />
-            <FaGithub className="text-black w-14 h-14 bg-white p-3.5 rounded-xl font-light hover:cursor-pointer scale-90 hover:scale-100 duration-300 transition-all" href={githublink} />
+            <a href={projectlink}><FaExternalLinkAlt className="text-black w-14 h-14 bg-white p-3.5 rounded-xl font-light hover:cursor-pointer scale-90 hover:scale-100 duration-300 transition-all" href={projectlink} /></a>
+            <a href={githublink}><FaGithub className="text-black w-14 h-14 bg-white p-3.5 rounded-xl font-light hover:cursor-pointer scale-90 hover:scale-100 duration-300 transition-all" href={githublink} /></a>
           </div>
         </div>
       </div>
